@@ -16,6 +16,17 @@ public class Model {
     public static Model getInstance(){
         return instance;
     }
+    public void deleteAllUser(){
+        model.clear();
+    }
+
+    public void deleteUser(String name){
+        for (User users: model) {
+            if (users.getName().equals(name)){
+                model.remove(users);
+            }
+        }
+    }
 
     public void addUser(User user){
         model.add(user);
