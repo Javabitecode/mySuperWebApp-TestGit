@@ -25,6 +25,12 @@ public class DeleteUsers extends HttpServlet {
         Model model = Model.getInstance();
         model.deleteUser(name);
 
+        String deleteText = req.getParameter("delete");
+        if (deleteText!=null){
+        model.deleteAllUser(deleteText);}
+
+
+
 
 
 

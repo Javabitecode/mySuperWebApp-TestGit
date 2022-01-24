@@ -30,8 +30,14 @@
             <label>Password:
                 <input type="password" name="pass"><br />
             </label>
+            <label>Print "all":
+                <input type="text" deleteText="delete"><br />
+            </label>
             <button type="submit">Submit</button>
+
+
         </form>
+
     </div>
 </div>
 

@@ -16,8 +16,9 @@ public class Model {
     public static Model getInstance(){
         return instance;
     }
-    public void deleteAllUser(){
-        model.clear();
+    public void deleteAllUser(String str){
+        if (str.equals("all")){
+        model.clear();}
     }
 
     public void deleteUser(String name){
